@@ -5,16 +5,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="shrink-0">
-                <rect width="32" height="32" rx="8" fill="url(#logo-grad-footer)" />
-                <path d="M8 12h4v8H8zM12 8h4v16h-4zM20 16h4v4h-4z" fill="white" />
-                <defs>
-                  <linearGradient id="logo-grad-footer" x1="0" y1="0" x2="32" y2="32">
-                    <stop stopColor="#0ea5e9" />
-                    <stop offset="1" stopColor="#6366f1" />
-                  </linearGradient>
-                </defs>
-              </svg>
+<img src="/logo.png" alt="ForgeMind" className="h-8 w-8 rounded-md shrink-0" />
               <span className="font-bold text-xl text-white">ForgeMind</span>
             </div>
             <p className="text-sm max-w-md">
