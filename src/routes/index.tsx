@@ -1,24 +1,62 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Navbar } from "@/components/ForgeMind/Navbar";
+import { Footer } from "@/components/ForgeMind/Footer";
+import { Hero } from "@/components/ForgeMind/Hero";
+import { Problem } from "@/components/ForgeMind/Problem";
+import { HowItWorks } from "@/components/ForgeMind/HowItWorks";
+import { Architecture } from "@/components/ForgeMind/Architecture";
+import { FlowChart } from "@/components/ForgeMind/FlowChart";
+import { Principles } from "@/components/ForgeMind/Principles";
+import { DataModel } from "@/components/ForgeMind/DataModel";
+import { Roadmap } from "@/components/ForgeMind/Roadmap";
+import { CTA } from "@/components/ForgeMind/CTA";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "ForgeMind — Multi-Agent DevOps Copilot" },
+      {
+        name: "description",
+        content:
+          "An autonomous multi-agent engineering control plane that understands, monitors, and coordinates the entire software delivery lifecycle.",
+      },
+      {
+        name: "keywords",
+        content:
+          "ForgeMind, AI, DevOps, Multi-Agent, Engineering, Control Plane, Autonomous",
+      },
+      {
+        property: "og:title",
+        content: "ForgeMind — Multi-Agent DevOps Copilot",
+      },
+      {
+        property: "og:description",
+        content: "Autonomous multi-agent control plane for software delivery.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-slate-50">
+      <Navbar />
+      <main>
+        <Hero />
+        <Problem />
+        <HowItWorks />
+        <Architecture />
+        <FlowChart />
+        <Principles />
+        <DataModel />
+        <Roadmap />
+        <CTA />
+      </main>
+      <Footer />
     </div>
   );
 }
