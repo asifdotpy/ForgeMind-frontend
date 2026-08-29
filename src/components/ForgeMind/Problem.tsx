@@ -32,7 +32,7 @@ export function Problem() {
           <div className="card-hover p-6 rounded-2xl border border-slate-200 bg-slate-50">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 flex items-center justify-center bg-red-50 text-red-600 rounded-full">
-                <span className="text-2xl">🤖→👀</span>
+                <span className="text-2xl">👀</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2">AI code creates more review work</h3>
