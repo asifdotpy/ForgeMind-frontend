@@ -7,7 +7,7 @@ export function CTA() {
         </h2>
         <p className="text-xl text-indigo-200 mb-10 max-w-2xl mx-auto leading-relaxed">
           Code generation is solved. The rest of engineering isn't.<br />
-          ForgeMind turns faster coding into faster shipping — deterministically.
+          ForgeMind turns faster coding into faster review — deterministically.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#problem" className="px-8 py-4 rounded-xl bg-white text-indigo-900 font-bold text-lg hover:bg-indigo-50 transition-colors shadow-2xl">

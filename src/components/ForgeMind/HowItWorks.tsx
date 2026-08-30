@@ -27,7 +27,7 @@ export function HowItWorks() {
     {
       phase: "ACT / ESCALATE",
       tagline: "Move fast, stay safe",
-      desc: "Low-risk: merge the fix automatically. High-risk: route to the right human with full context.",
+      desc: "Low-risk: auto-publish analysis and pass checks. High-risk: escalate to the right human with full context.",
       icon: "🚀",
     },
     {
