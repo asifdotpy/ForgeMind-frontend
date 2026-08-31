@@ -29,7 +29,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="#roadmap" className="hover:text-white transition-colors">Roadmap</a></li>
               <li>
-                <a href="https://github.com/asifdotpy/ForgeMind" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                <a href="https://github.com/asifdotpy/forge-mind" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                   GitHub →
                 </a>
               </li>

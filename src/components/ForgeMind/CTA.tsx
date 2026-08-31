@@ -13,7 +13,7 @@ export function CTA() {
           <a href="#problem" className="px-8 py-4 rounded-xl bg-white text-indigo-900 font-bold text-lg hover:bg-indigo-50 transition-colors shadow-2xl">
             Understand the problem →
           </a>
-          <a href="https://github.com/asifdotpy/ForgeMind" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl border-2 border-indigo-400/40 text-white font-semibold text-lg hover:bg-indigo-900/40 transition-all">
+          <a href="https://github.com/asifdotpy/forge-mind" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl border-2 border-indigo-400/40 text-white font-semibold text-lg hover:bg-indigo-900/40 transition-all">
             Star on GitHub →
           </a>
         </div>
